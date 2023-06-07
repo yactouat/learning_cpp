@@ -1,7 +1,7 @@
 #include <string>
 #include "xml.h"
 
-class XMLParser {
+class XML {
 private:
     std::string nodeId;
 
