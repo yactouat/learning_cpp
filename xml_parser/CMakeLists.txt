@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(my_project)
+project(XML_PARSER)
 
 # TODO explain this thing
 
@@ -19,17 +19,17 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(
-  xml_test
-  xml_test.cc
+  xml_parser_test
+  xml_parser_test.cc
 )
 target_link_libraries(
-  xml_test
+  xml_parser_test
   GTest::gtest_main
 )
-add_executable(xml xml.cpp)
+add_executable(xml_parser xml_parser.cpp)
 
 include(GoogleTest)
-gtest_discover_tests(xml_test)
+gtest_discover_tests(xml_parser_test)
 
 # build with `cmake -S . -B build && cmake --build build`
 # test with `cd build && ctest`
