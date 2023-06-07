@@ -1,16 +1,10 @@
 #include <string>
 #include "xml.h"
 
-class XML {
-private:
-    std::string nodeId;
+void XML::parse(const std::string& xml) {
+    nodeId = 'x';
+}
 
-public:
-    void parse(const std::string& xml) {
-        nodeId = 'x';
-    }
-
-    std::string getNodeId() {
-        return nodeId;
-    }
-};
+std::string XML::getNodeId() {
+    return nodeId;
+}

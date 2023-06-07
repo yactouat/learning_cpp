@@ -1,5 +1,5 @@
-#ifndef XML_H
-#define XML_H
+#ifndef xml
+#define xml
 
 #include <string>
 
@@ -12,4 +12,4 @@ public:
     std::string getNodeId();
 };
 
-#endif // XML_H
+#endif // xml
