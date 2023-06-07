@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.14)
 project(my_project)
 
+# TODO explain all this
+
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -27,6 +29,9 @@ target_link_libraries(
 
 include(GoogleTest)
 gtest_discover_tests(xml_parser_test)
+
+add_library(xml_parser xml_parser.cpp)
+target_include_directories(xml_parser PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 # build `cmake -S . -B build && cmake --build build`
 # test `cd build && ctest && cd ..`
