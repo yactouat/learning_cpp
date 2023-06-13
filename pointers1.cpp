@@ -1,5 +1,10 @@
 #include<iostream>
 
+/**
+ * this piece of code is also a good starting point to learn
+ * how to debug C++ code in VSCode =>
+ *  - `sudo apt install gdb`
+*/
 int main() {
     int x = 1; // a normal integer variable
     int* ptr = &x; // a pointer variable that holds the address of x
